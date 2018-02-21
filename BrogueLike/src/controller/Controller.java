@@ -5,13 +5,10 @@ import java.util.LinkedList;
 
 import com.googlecode.lanterna.input.KeyStroke;
 
+import model.*;
 import view.DungeonView;
 
-import model.Dungeon;
-import model.Enemy;
 import model.Entity.Direction;
-import model.Hero;
-import model.Spider;
 
 public class Controller {
 	private Dungeon dungeon;
@@ -22,7 +19,7 @@ public class Controller {
 	public Controller(DungeonView dungeonView) throws IOException {
 		this.dungeonView = dungeonView;
 		dungeon = new Dungeon(dungeonView);
-		hero = new Hero(new Point(1,1), dungeonView);
+		hero = new Hero(new Point(1,1), dungeonView, dungeon);
 		initEnemies();
 	}
 	
@@ -37,9 +34,9 @@ public class Controller {
 	public void initEnemies() {
 		enemies = new LinkedList<Enemy>();
 		//TODO Initialize enemies to random positions
-		enemies.add(new Spider(new Point(13,20), dungeonView));
-		enemies.add(new Spider(new Point(22,8), dungeonView));
-		enemies.add(new Spider(new Point(18,19), dungeonView));
+		enemies.add(new Spider(new Point(13,20), dungeonView, dungeon));
+		enemies.add(new Spider(new Point(22,8), dungeonView, dungeon));
+		enemies.add(new Spider(new Point(18,19), dungeonView, dungeon));
 	}
 	
 	public void input() throws IOException {
@@ -48,16 +45,24 @@ public class Controller {
 			KeyStroke key = dungeonView.getInput();
 			switch (key.getKeyType()) {
 			case ArrowDown:
-				hero.move(Direction.DOWN);
+				if (!(dungeon.getTile(new Point(hero.position().x, hero.position().y+1)) instanceof Unwalkable)) {
+                    hero.move(Direction.DOWN);
+                }
 				break;
 			case ArrowLeft:
-				hero.move(Direction.LEFT);
+                if (!(dungeon.getTile(new Point(hero.position().x-1, hero.position().y)) instanceof Unwalkable)) {
+                    hero.move(Direction.LEFT);
+                }
 				break;
 			case ArrowRight:
-				hero.move(Direction.RIGHT);
+                if (!(dungeon.getTile(new Point(hero.position().x+1, hero.position().y)) instanceof Unwalkable)) {
+                    hero.move(Direction.RIGHT);
+                }
 				break;
 			case ArrowUp:
-				hero.move(Direction.UP);
+                if (!(dungeon.getTile(new Point(hero.position().x, hero.position().y-1)) instanceof Unwalkable)) {
+                    hero.move(Direction.UP);
+                }
 				break;
 	
 			default:

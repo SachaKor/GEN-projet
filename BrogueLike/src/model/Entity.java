@@ -20,12 +20,15 @@ public abstract class Entity {
 	}
 	public char symbol;
 	private DungeonView dungeonView;
+	private Dungeon dungeon;
 	private Point position;
 	private Tile tile;
 	
-	public Entity (Point position, DungeonView dungeonView) {
+	public Entity (Point position, DungeonView dungeonView, Dungeon dungeon) {
 		this.position = position;
 		this.dungeonView = dungeonView;
+		this.dungeon = dungeon;
+		this.tile = dungeon.getTile(position);
 	}
 	
 	public Point position() {
@@ -33,8 +36,10 @@ public abstract class Entity {
 	}
 	
 	public void move(Direction direction) throws IOException {
+	    Point previousPos = position;
 		position = new Point(position.x + direction.direction.x, position.y + direction.direction.y);
-		dungeonView.display(this);
+		tile = dungeon.getTile(position);
+		dungeonView.move(this, previousPos);
 	}
 	
 	public void tile(Tile tile) {

@@ -6,8 +6,8 @@ import view.DungeonView;
 
 
 public class Hero extends Entity {	
-	public Hero(Point position, DungeonView dungeonView) {
-		super(position, dungeonView);
+	public Hero(Point position, DungeonView dungeonView, Dungeon dungeon) {
+		super(position, dungeonView, dungeon);
 		symbol = 'X';
 	}
 }

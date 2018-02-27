@@ -18,17 +18,21 @@ public class Controller {
 	
 	public Controller(DungeonView dungeonView) throws IOException {
 		this.dungeonView = dungeonView;
-		dungeon = new Dungeon(dungeonView);
+		dungeon = new Dungeon();
 		hero = new Hero(new Point(1,1), dungeonView, dungeon);
 		initEnemies();
 	}
 	
 	public void initGame() throws IOException {
+		dungeonView.showMap(dungeon.getTiles());
 		dungeon.placeEntity(hero);
+		dungeonView.display(hero);
 		initEnemies();
 		for(Enemy enemy : enemies) {
 			dungeon.placeEntity(enemy);
+			dungeonView.display(enemy);
 		}
+
 	}
 	
 	public void initEnemies() {

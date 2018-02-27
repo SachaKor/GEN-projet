@@ -7,17 +7,14 @@ import java.util.LinkedList;
 import view.DungeonView;
 
 public class Dungeon {
-	private DungeonView dungeonView;
 	private LinkedList<Tile> tiles;
 	private LinkedList<Entity> entities;
 	
 	final private int DUNGEON_SIZE = 30;
 	
-	public Dungeon(DungeonView dungeonView) throws IOException {
-		this.dungeonView = dungeonView;
+	public Dungeon() throws IOException {
 		tiles = new LinkedList<Tile>();
 		generateTiles();
-		dungeonView.showMap(tiles);
 		entities = new LinkedList<Entity>();
 	}
 	
@@ -40,7 +37,6 @@ public class Dungeon {
 	
 	public void placeEntity(Entity entity) throws IOException {
 		entities.add(entity);
-		dungeonView.display(entity);
 	}
 	
 	public int size() {
@@ -50,4 +46,5 @@ public class Dungeon {
 	public LinkedList<Entity> getEntities() {
 		return entities;
 	}
+	public LinkedList<Tile> getTiles() { return tiles; }
 }

@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a906d74-cd23-46a6-a26d-c401c37d2663" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="35e6f825-662d-4535-9bea-3807417ca1f0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BrogueLike/.idea/workspace.xml" afterPath="$PROJECT_DIR$/BrogueLike/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/controller/Controller$1.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/controller/Controller$1.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/controller/Controller.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/controller/Controller.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/Dungeon.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/Dungeon.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/DungeonGraph$Edge.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/DungeonGraph$Edge.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/DungeonGraph.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/DungeonGraph.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/Room.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/dungeon/Room.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Enemy.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Enemy.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Entity$Direction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Entity.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Entity.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Hero.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Hero.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Spider.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/model/entities/Spider.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/view/dungeon/DungeonView.class" afterPath="$PROJECT_DIR$/BrogueLike/out/production/BrogueLike/view/dungeon/DungeonView.class" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/controller/Controller.java" afterPath="$PROJECT_DIR$/BrogueLike/src/controller/Controller.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/Dungeon.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/Dungeon.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/DungeonGraph.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/DungeonGraph.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/Room.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/dungeon/Room.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/entities/Enemy.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/entities/Enemy.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/entities/Entity.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/entities/Entity.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/entities/Hero.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/entities/Hero.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/model/entities/Spider.java" afterPath="$PROJECT_DIR$/BrogueLike/src/model/entities/Spider.java" />
+      <change beforePath="$PROJECT_DIR$/BrogueLike/src/view/dungeon/DungeonView.java" afterPath="$PROJECT_DIR$/BrogueLike/src/view/dungeon/DungeonView.java" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/JUnitLabo.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/src/Annuaire.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/src/Exemple.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/JUnitLabo/src/ExempleTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/Labo_JUnit.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/main/java/Annuaire.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/main/java/Exemple.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/main/java/Personne.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/test/java/AnnuaireTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/test/java/ExempleTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/src/test/java/PersonneTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/classes/Annuaire.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/classes/Exemple.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/classes/Personne.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/test-classes/AnnuaireTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/test-classes/ExempleTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Labo_JUnit/target/test-classes/PersonneTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Plex_Admin/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Plex_Admin/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Plex_Admin/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Plex_Admin/Plex_Admin.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Plex_Admin/Plex_Admin.iml" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,88 +68,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Exemple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exemple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Annuaire.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Annuaire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="873">
-              <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-              <folding>
-                <element signature="e#116#117#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#2252#2253#0" expanded="true" />
-                <element signature="e#2299#2300#0" expanded="true" />
-                <element signature="e#2337#2338#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExempleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ExempleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Exemple.java" />
-        <option value="$PROJECT_DIR$/src/ExempleTest.java" />
-        <option value="$PROJECT_DIR$/src/Annuaire.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="-1" />
-    <option name="width" value="961" />
+    <option name="width" value="959" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -109,41 +95,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="JUnitLabo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JUnitLabo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JUnitLabo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JUnitLabo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JUnitLabo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="JUnitLabo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="GEN-projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GEN-projet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BrogueLike" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,33 +214,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a906d74-cd23-46a6-a26d-c401c37d2663" name="Default" comment="" />
-      <created>1519983353831</created>
+      <changelist id="35e6f825-662d-4535-9bea-3807417ca1f0" name="Default" comment="" />
+      <created>1522050135384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1519983353831</updated>
+      <updated>1522050135384</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="961" height="1053" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="0" width="959" height="1053" extended-state="4" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15954119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -287,132 +255,11 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ExempleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exemple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Annuaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#2252#2253#0" expanded="true" />
-            <element signature="e#2299#2300#0" expanded="true" />
-            <element signature="e#2337#2338#0" expanded="true" />
-            <element signature="e#2371#2372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>JUnitLabo</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

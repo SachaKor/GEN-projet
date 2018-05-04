@@ -1,6 +1,6 @@
-package main.java.server;
+package server;
 
-import main.java.server.model.dungeon.tiles.Tile;
+import server.model.tiles.Tile;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

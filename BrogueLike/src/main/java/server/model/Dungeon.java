@@ -1,26 +1,51 @@
 package server.model;
 
 import server.model.entities.Entity;
+import server.model.entities.Hero;
 import server.model.tiles.Tile;
 import server.model.tiles.DeepWater;
 import server.model.tiles.Ground;
 import server.model.tiles.ShallowWater;
 import server.model.tiles.Wall;
+import server.utils.Direction;
 
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Dungeon {
     private Tile[][] tiles;
     private Entity[][] entities;
+    private Hero hero;
+
+    static private Dungeon dungeon;
+
+    static {
+        try {
+            dungeon = new Dungeon();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     final public static int DUNGEON_SIZE = 24;
 
-    public Dungeon() {
+    private Dungeon() throws IOException {
         tiles = new Tile[DUNGEON_SIZE][DUNGEON_SIZE];
         generateDungeon();
         entities = new Entity[DUNGEON_SIZE][DUNGEON_SIZE];
+        initHero();
+    }
+
+    private synchronized void initHero() throws IOException {
+        Hero hero = new Hero(new Point(4, 4));
+        this.hero = hero;
+        placeEntity(hero);
+    }
+
+    public Hero getHero() {
+        return hero;
     }
 
     public void generateDungeon() {
@@ -67,9 +92,25 @@ public class Dungeon {
         return entities[position.y][position.x];
     }
 
+    public Entity getEntity(int id) {
+        for (Entity[] entLine : entities) {
+            for (Entity entity : entLine) {
+                if (entity.getId() == id) {
+                    return entity;
+                }
+            }
+        }
+        return null;
+    }
+
     public void moveEntity(Entity entity, Point newPos) {
         entities[entity.position().y][entity.position().x] = null;
         entities[newPos.y][newPos.x] = entity;
+    }
+
+    public void moveEntity(Entity entity, Direction direction) {
+        entities[entity.position().y][entity.position().x] = null;
+        entities[entity.position().y + direction.y()][entity.position().x + direction.x()] = entity;
     }
 
     public void placeEntity(Entity entity) {
@@ -77,4 +118,8 @@ public class Dungeon {
     }
 
     public Tile[][] getTiles() { return tiles; }
+
+    static public Dungeon getDungeon() {
+        return dungeon;
+    }
 }

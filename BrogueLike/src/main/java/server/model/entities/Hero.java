@@ -1,7 +1,5 @@
 package server.model.entities;
 
-import server.model.Dungeon;
-
 import java.awt.*;
 
 
@@ -10,8 +8,8 @@ public class Hero extends Entity {
     private int strength;
     private int gold;
 
-    public Hero(Point position, Dungeon dungeon) {
-        super(position, dungeon);
+    public Hero(Point position) {
+        super(position);
         symbol = 'X';
         health = 20;
         strength = 1;

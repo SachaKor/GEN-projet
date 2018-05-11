@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BrogueLike" target="7" />
+      <module name="BrogueLike" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

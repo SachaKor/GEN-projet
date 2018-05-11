@@ -1,29 +1,53 @@
 package client.model;
 
 import client.model.entities.Entity;
+import client.model.entities.Hero;
 import client.model.tiles.Tile;
 import client.model.tiles.DeepWater;
 import client.model.tiles.Ground;
 import client.model.tiles.ShallowWater;
 import client.model.tiles.Wall;
 import client.utils.Direction;
+import client.view.DungeonView;
 
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Dungeon {
     private Tile[][] tiles;
     private Entity[][] entities;
+    private Hero hero;
 
-    static private Dungeon dungeon = new Dungeon();
+    static private Dungeon dungeon;
+
+    static {
+        try {
+            dungeon = new Dungeon();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     final public static int DUNGEON_SIZE = 24;
 
-    private Dungeon() {
+    private Dungeon() throws IOException {
         tiles = new Tile[DUNGEON_SIZE][DUNGEON_SIZE];
         generateDungeon();
         entities = new Entity[DUNGEON_SIZE][DUNGEON_SIZE];
+        initHero();
+    }
+
+    private synchronized void initHero() throws IOException {
+        Hero hero = new Hero(new Point(4, 4));
+        this.hero = hero;
+        placeEntity(hero);
+        DungeonView.getDungeonView().displayEntity(hero);
+    }
+
+    public Hero getHero() {
+        return hero;
     }
 
     public void generateDungeon() {
@@ -88,7 +112,7 @@ public class Dungeon {
 
     public void moveEntity(Entity entity, Direction direction) {
         entities[entity.position().y][entity.position().x] = null;
-        entities[entity.position().y + direction.y()][entity.position().x] = entity;
+        entities[entity.position().y + direction.y()][entity.position().x + direction.x()] = entity;
     }
 
     public void placeEntity(Entity entity) {

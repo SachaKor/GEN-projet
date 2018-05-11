@@ -10,15 +10,13 @@ public abstract class Entity implements Unwalkable {
     private static int nbEntity = 0;
     private int id;
     public char symbol;
-    protected Dungeon dungeon;
     protected Point position;
     private Tile tile;
 
-    public Entity (Point position, Dungeon dungeon) {
+    public Entity (Point position) {
         id = nbEntity++;
         this.position = position;
-        this.dungeon = dungeon;
-        this.tile = dungeon.getTile(position);
+        this.tile = Dungeon.getDungeon().getTile(position);
     }
 
     public int getId() {
@@ -30,10 +28,10 @@ public abstract class Entity implements Unwalkable {
     }
 
     public void move(Point nextPos) {
-        if (dungeon.getEntity(nextPos) == null) {
-            dungeon.moveEntity(this, nextPos);
+        if (Dungeon.getDungeon().getEntity(nextPos) == null) {
+            Dungeon.getDungeon().moveEntity(this, nextPos);
             position = nextPos;
-            tile = dungeon.getTile(position);
+            tile = Dungeon.getDungeon().getTile(position);
         }
     }
 

@@ -24,7 +24,7 @@ public class PathFinder {
     }
 
     private void bfs(DungeonGraph graph, int source) {
-        LinkedList<Integer> q = new LinkedList<>();
+        LinkedList<Integer> q = new LinkedList();
         for (int v = 0; v < graph.V(); v++)
             distTo[v] = 10000000;
         distTo[source] = 0;
@@ -50,7 +50,7 @@ public class PathFinder {
 
     public Stack<Integer> pathTo(int v) {
         if (!hasPathTo(v)) return null;
-        Stack<Integer> path = new Stack<>();
+        Stack<Integer> path = new Stack();
         int x;
         for (x = v; distTo[x] != 0; x = edgeTo[x])
             path.push(x);

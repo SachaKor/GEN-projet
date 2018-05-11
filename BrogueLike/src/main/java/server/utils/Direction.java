@@ -17,4 +17,12 @@ public enum Direction {
         direction.x = x;
         direction.y = y;
     }
+
+    public int x () {
+        return direction.x;
+    }
+
+    public int y () {
+        return direction.y;
+    }
 }

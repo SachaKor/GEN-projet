@@ -13,8 +13,8 @@ public abstract class Entity implements Unwalkable {
     protected Point position;
     private Tile tile;
 
-    public Entity (Point position) {
-        id = nbEntity++;
+    public Entity (Point position, int id) {
+        this.id = id;
         this.position = position;
         this.tile = Dungeon.getDungeon().getTile(position);
     }

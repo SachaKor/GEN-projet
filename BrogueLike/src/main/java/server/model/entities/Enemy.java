@@ -4,7 +4,7 @@ import java.awt.*;
 
 abstract public class Enemy extends Entity {
 
-	public Enemy (Point position) {
-	    super(position);
+	public Enemy (Point position, int id) {
+	    super(position, id);
 	}
 }

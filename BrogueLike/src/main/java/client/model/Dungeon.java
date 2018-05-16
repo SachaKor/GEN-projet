@@ -36,11 +36,10 @@ public class Dungeon {
         tiles = new Tile[DUNGEON_SIZE][DUNGEON_SIZE];
         generateDungeon();
         entities = new Entity[DUNGEON_SIZE][DUNGEON_SIZE];
-        initHero();
     }
 
-    private synchronized void initHero() throws IOException {
-        Hero hero = new Hero(new Point(4, 4));
+    public synchronized void initHero(int id) throws IOException {
+        Hero hero = new Hero(new Point(4+id, 4), id);
         this.hero = hero;
         placeEntity(hero);
         DungeonView.getDungeonView().displayEntity(hero);

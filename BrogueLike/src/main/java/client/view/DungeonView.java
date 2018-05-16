@@ -14,7 +14,7 @@ import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
 public class DungeonView implements TerminalResizeListener {
-    private Terminal terminal = new DefaultTerminalFactory().createTerminal();
+    private Terminal terminal;
     private Tile[][] tmpMap;
 
     static DungeonView dungeonView;
@@ -28,6 +28,7 @@ public class DungeonView implements TerminalResizeListener {
     }
 
     public DungeonView() throws IOException {
+        terminal = new DefaultTerminalFactory().createTerminal();
         terminal.setCursorVisible(false);
         terminal.addResizeListener(this);
     }

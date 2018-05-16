@@ -1,5 +1,6 @@
 package client.controller;
 
+import client.model.Dungeon;
 import protocol.GameProtocol;
 
 import java.io.BufferedReader;
@@ -21,6 +22,7 @@ public class ServerLink {
         out.println(GameProtocol.HELLO);
         out.flush();
         id = Integer.valueOf(in.readLine());
+        Dungeon.getDungeon().initHero(id);
         InputController input = new InputController(in, out);
         ClientController clientController = new ClientController(in, out);
         (new Thread(input)).start();

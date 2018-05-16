@@ -2,7 +2,7 @@ package server.controller;
 
 import client.controller.ClientController;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -32,15 +32,17 @@ public class GameServer {
         Thread serverThread = new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
-                    Socket clientSocket = serverSocket.accept();
-                    nbClients++;
-                    ClientWorker clientWorker = new ClientWorker(clientSocket, getClientHandler(), GameServer.this);
-                    clientWorkers.add(clientWorker);
-                    Thread clientThread = new Thread(clientWorker);
-                    clientThread.start();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                while (true) {
+                    try {
+                        Socket clientSocket = serverSocket.accept();
+                        nbClients++;
+                        ClientWorker clientWorker = new ClientWorker(clientSocket, getClientHandler(), GameServer.this);
+                        clientWorkers.add(clientWorker);
+                        Thread clientThread = new Thread(clientWorker);
+                        clientThread.start();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
 
             }
@@ -54,5 +56,13 @@ public class GameServer {
 
     public static GameServer getServer() {
         return server;
+    }
+
+    public void notifyClients(String message) {
+        PrintWriter writer;
+        for (ClientWorker client : clientWorkers) {
+            writer = new PrintWriter(new OutputStreamWriter(client.getOs()));
+            writer.println(message);
+        }
     }
 }

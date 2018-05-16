@@ -13,11 +13,11 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class Dungeon {
     private Tile[][] tiles;
     private Entity[][] entities;
-    private Hero hero;
 
     static private Dungeon dungeon;
 
@@ -35,17 +35,10 @@ public class Dungeon {
         tiles = new Tile[DUNGEON_SIZE][DUNGEON_SIZE];
         generateDungeon();
         entities = new Entity[DUNGEON_SIZE][DUNGEON_SIZE];
-        initHero();
     }
 
-    private synchronized void initHero() throws IOException {
-        Hero hero = new Hero(new Point(4, 4));
-        this.hero = hero;
+    public synchronized void initHero(Hero hero) throws IOException {
         placeEntity(hero);
-    }
-
-    public Hero getHero() {
-        return hero;
     }
 
     public void generateDungeon() {

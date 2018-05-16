@@ -10,8 +10,8 @@ public class Hero extends Entity {
     private int strength;
     private int gold;
 
-    public Hero(Point position) {
-        super(position);
+    public Hero(Point position, int id) {
+        super(position, id);
         symbol = 'X';
         health = 20;
         strength = 1;
